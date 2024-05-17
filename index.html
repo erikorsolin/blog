@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Orsolin de Paula</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        header, section {
+            background: linear-gradient(to right, #16213e, #0f3460);
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #16213e;
+            color: #ffffff;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .skills, .timeline, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .skill, .project, .event {
+            background: #0f3460;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .form-input {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            width: calc(100% - 22px);
+        }
+        .submit-button {
+            background-color: #ffffff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .skill i {
+            margin-right: 5px;
+        }
+        @media (max-width: 768px) {
+            .skills, .timeline, .projects {
+                flex-direction: column;
+            }
+        }
+        .articles, .testimonials, .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .article, .testimonial, .gallery-item {
+        background: #16213e;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .article:hover, .testimonial:hover, .gallery-item:hover {
+        transform: scale(1.03);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Erik Orsolin de Paula</h1>
+            <p>Desenvolvedor e Pesquisador em Ciências da Computação</p>
+        </header>
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Com um histórico de bolsista de iniciação científica do PET Computação, minha jornada acadêmica na UFSC tem sido marcada por uma dedicação intensa à pesquisa e desenvolvimento. Meu conhecimento técnico abrange linguagens de programação como Python, Go, C e C++, habilidades que apliquei em diversos projetos. Atualmente, estou expandindo meu conhecimento em Computação Distribuída e aprimorando minhas competências práticas com a ferramenta Apache Kafka. Estou sempre em busca de novos desafios e oportunidades para contribuir e crescer na área de tecnologia.</p>
+        </section>
+        <section>
+            <h2>Linguagens</h2>
+            <div class="skills">
+                <div class="skill"><i class="fab fa-python"></i>Python</div>
+                <div class="skill"><i class="fab fa-js-square"></i>JavaScript</div>
+                <div class="skill"><i class="fab fa-cuttlefish"></i>C++/C</div>
+                <div class="skill"><i class="fab fa-google"></i>Go</div>
+                <div class="skill"><i class="fas fa-database"></i>SQL</div>
+            </div>
+        </section>
+        <section>
+            <h2>Projetos</h2>
+            <div class="projects">
+                <!-- Projetos específicos com links e descrições -->
+                <div class="project" onclick="window.location='https://github.com/erikorsolin/gerador-certificados-seccom';">
+                    <h3>Gerador de Certificados</h3>
+                    <p>Programa em Python para gerar e enviar certificados de participação para eventos, como a SECCOM (Semana Acadêmica da Computação). O programa lê dados de arquivos CSV, gera um certificado no formato PNG e o envia por e-mail aos participantes.</p>
+                </div>
+                <div class="project" onclick="window.location='https://github.com/erikorsolin/git-tutorials';">
+                    <h3>Git Tutorials</h3>
+                    <p>Guia básico dos principais comandos do Git para iniciantes, o projeto contém um readme que elenca os principais comandos, para que cada comando serve e sua explicação.</p>
+                </div>
+                <div class="project" onclick="window.location='https://github.com/erikorsolin/testes-de-software';">
+                    <h3>Testes de Software</h3>
+                    <p>Projeto simples de um sistema de cálculo de salário, desenvolvido como parte de um estudo sobre Testes de Software. O objetivo principal deste projeto é demonstrar a aplicação de testes de nível de unidade utilizando a técnica de caixa preta, baseada em especificação.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Timeline Profissional</h2>
+            <div class="timeline">
+                <div class="event">
+                    <h3>2022 - 2024</h3>
+                    <p>Bolsista no PET Computação UFSC</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Blog</h2>
+            <div class="articles">
+                <div class="article">
+                    <h3>Como o Git pode melhorar seu fluxo de trabalho</h3>
+                    <p>Explore como o Git pode ser utilizado para gerenciar eficientemente projetos de desenvolvimento de software.</p>
+                    <a href="blog.html">Leia mais</a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section>
+            <h2>Contato</h2>
+            <form>
+                <input type="text" class="form-input" placeholder="Seu nome">
+                <input type="email" class="form-input" placeholder="Seu e-mail">
+                <textarea class="form-input" placeholder="Sua mensagem" rows="4"></textarea>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </section>
+        <footer>
+            © 2024 Erik Orsolin de Paula - Todos os direitos reservados.
+        </footer>
+    </div>
+</body>
+</html>

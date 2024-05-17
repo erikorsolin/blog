@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #1a1a2e; /* Mantém o fundo escuro da página principal */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+header, footer {
+    background: #16213e; /* Um pouco mais claro que o fundo da página para destaque */
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+nav a {
+    color: #ffffff; /* Cor destacada para links da navegação */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+article {
+    background: #0f3460; /* Fundo especial para artigos do blog */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+article a {
+    color: #ffffff; /* Cor para links dentro de artigos */
+}
+
+article a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer {
+    background: #16213e;
+    color: #ffffff;
+    padding: 10px 0;
+}
